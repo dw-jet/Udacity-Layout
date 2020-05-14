@@ -1,14 +1,14 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   border: 1px solid red;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 .item {
-  width: 250px;
-  height: 250px;
   background-color: #FF9A72;
   border-right: 1px solid black;
+  padding: 10px;
 }
 #dixon {
   order: 2;
