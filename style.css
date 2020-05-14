@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid red;
+}
+.item {
+  width: 250px;
+  height: 250px;
+  background-color: #FF9A72;
+  border-right: 1px solid black;
+}
+#dixon {
+  order: 2;
+}
+#boots {
+  order: 3;
+}
+#lexy {
+  order: 1;
+}
