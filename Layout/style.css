@@ -1,0 +1,39 @@
+body {
+  background-color: #444;
+}
+
+.container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 150px;
+
+  grid-template-columns: 30px repeat(7, 1fr);
+  grid-template-rows: 70px 400px 1fr;
+  grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft"
+}
+
+.box {
+  border: 1px solid red;
+  background: #F8FA9D;
+}
+
+.header {
+  grid-area:hd;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.sidebar {
+  grid-area: sd;
+}
+
+.main {
+  grid-area: main;
+}
+
