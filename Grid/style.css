@@ -5,17 +5,23 @@ body {
 }
 
 .container {
+  background-color: #fff;
+  color: #000; 
   display: grid;
   width: 80vw;
-  grid-template-columns: 35vw 35vw;
-  grid-template-rows: 45vh 45vh;
-  grid-template-areas: "top top" "bottomLeft bottomRight";
+  height: 100vh;
   margin: auto;
-  grid-gap: 20px;
+  grid-gap: 15px;
   border: 3px solid rgb(247, 182, 96);
   justify-content: center;
-  background-color: #fff;
-  color: #000;
+  /*Use repeat to avoid repetitive css*/
+  /*grid-template-columns: repeat(6, 1fr);*/
+
+  grid-template-columns: repeat(3, 1fr);
+
+  /*When number of rows is unknown use grid auto rows*/
+  /*Use auto for max if you want to to fill all available space*/
+  grid-auto-rows: minmax(100px, 135px);
 }
 
 .box {
@@ -27,11 +33,11 @@ body {
 }
 
 #one {
-  grid-area: top;
+  /*grid-area: top;*/
 }
 #two {
-  grid-area: bottomLeft;
+  /*grid-area: bottomLeft;*/
 }
 #three {
-  grid-area: bottomRight;
+  /*grid-area: bottomRight;*/
 }
